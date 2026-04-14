@@ -18,6 +18,7 @@
 body {
     background-color: var(--fundo);
     color: var(--branco);
+    width: 99vw;
 }
 
 h1 {
@@ -34,7 +35,8 @@ h1 {
 }
 
 .tela1 img {
-    width: 500px;
+    width: 99vw;
+    height: 300px;
     margin: auto;
 }
 
@@ -52,23 +54,24 @@ h1 {
 
 .tela1>#startGame {
     margin: auto;
-    background-color: #525252;
+    color: var(--fundo);
+    font-size: larger;
+    background-color: var(--frasco);
     border: none;
     padding: 20px;
     width: fit-content;
-    color: var(--branco);
     flex: 0 0 auto;
 }
 
 #startGame:active {
-    background-color: var(--frasco);
+    background-color: var(--branco);
 }
 
 .tela1.active {
     display: flex;
 }
 
-.tela2 {
+.tela2 {    
     display: none;
     flex-flow: column nowrap;
 }
@@ -78,8 +81,14 @@ h1 {
     flex-flow: column nowrap;
 }
 
+@keyframes slideIn {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
+}
+
 .active {
     display: flex;
+    animation: slideIn .5s forwards;
 }
 
 .btnReset {
@@ -96,7 +105,7 @@ h1 {
 .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 480px;
+    width: 360px;
 }
 
 .frasco {
