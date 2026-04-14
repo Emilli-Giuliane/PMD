@@ -18,7 +18,7 @@
 body {
     background-color: var(--fundo);
     color: var(--branco);
-    width: 414px;
+    width: 410px;
     height: fit-content;
 }
 
@@ -106,7 +106,7 @@ h1 {
 .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 360px;
+    width: 400px;
 }
 
 .frasco {
