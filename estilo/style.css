@@ -18,7 +18,8 @@
 body {
     background-color: var(--fundo);
     color: var(--branco);
-    width: 99vw;
+    width: 360px;
+    height: fit-content;
 }
 
 h1 {
@@ -35,7 +36,7 @@ h1 {
 }
 
 .tela1 img {
-    width: 99vw;
+    width: 350px;
     height: 300px;
     margin: auto;
 }
