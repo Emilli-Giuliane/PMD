@@ -12,7 +12,6 @@
     --azul-claro: #13C2B9;
     --vermelha: #FF0000;
     --amarelo: #FFFF00;
-
 }
 
 body {
@@ -23,7 +22,7 @@ body {
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 55px;
     margin-bottom: 30px;
 }
 

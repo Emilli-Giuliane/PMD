@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Para Minha mãezinha</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --fundo: #2D2D2D;
+            --frasco: #7C7C7C;
+            --branco: #D9D9D9;
+            --verde-claro:rgb(89, 185, 16);
+        }
+
+        body {
+            display: flex;
+            flex-flow: column nowrap;
+            line-height: 1.2em;
+            background: url(estilo/background-image.jpg) no-repeat center center;
+            background-size: cover;
+            color: white;
+            font-weight: medium;
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            padding: 10px;
+            background-color: #141414ce;
+        }
+
+        h1 {
+            line-height: normal;
+            -webkit-text-stroke: rgb(41, 81, 10) 1px;
+            color: var(--verde-claro);
+        }
+
+        strong {
+            color: var(--verde-claro);
+        }
+        
+        p {
+            text-indent: 1em;
+            margin:10px 0;
+            justify-content: right;
+        }
+
+        .pedroElParagrapho{
+            text-indent: 0;
+        }
+
+        .containerImg>img {
+            width: 414px;
+        }
+        
+        #loveCoffee {
+            width: 414px;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <div class="containerImg">
+        <h1>Um recado para minha guerreira vitoriosa</h1>
+        <!-- Colocar uma foto dela aqui, tem que ocupar a tela toda do celular -->
+        <img src="../../Imagens/Capturas de tela/Captura de tela de 2026-04-14 18-52-56.png"> 
+    </div>
+        <p>
+            Cada momento que perdes comigo, cada brincadeira que faço contigo, cada rizada que compartilhas comigo, a cada "cada" eu me recordo de quão bom é ter você perto.<br>
+            Neste dia tão maravilhoso eu quero homenagiar o meu porto seguro, que me carregou nos braços desde o dia que nasci até meus 24 anos. Eu reconheço o seu valor, e percebo que sou muito rica, pois tenho uma joia tão rara.
+        </p>
+        
+        <p class="pedroElParagrapho">
+            <strong>Mãe</strong>,<br>
+            <br>
+            <strong>T</strong>e agradeço por todas os ensinamentos,<br>
+            <strong>E</strong> as broncas,<br>
+            <br>
+            <strong>A</strong> confiança,<br>
+            <strong>M</strong>uitas risadas,<br>
+            <strong>O</strong>s bons e maus momentos,<br>
+            <br>
+            Pois tudo isso são puras demonstrações de amor.
+        </p>
+        <p>
+            Agradeço a Deus por me dar uma mãe tão incrível. Que sempre cuidou de mim, me deu a mão e me ensinou a caminhar para que um dia eu possa caminhar sozinha.<br>
+            Obrigada por fazer parte da minha vida, obrigada por ser essa mãe maravilhosa.
+        </p>
+        <p class="pedroElParagrapho">
+            Te amo mamãe!<br>
+            Feito com muito amor e carinho &#x2764 &#x2764 &#x2764,<br>
+            <br>
+            de sua filha, Emilli.
+        </p>
+        <img id="loveCoffee" src="estilo/love-coffee.jpg" alt="Imagem de um café">
+    </main>
+ </body>
+</html>
