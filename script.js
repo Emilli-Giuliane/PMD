@@ -1,7 +1,7 @@
 document.querySelector('#startGame').addEventListener('pointerup', () => {
     
     let tela1 = document.querySelector(".tela1");
-    let tela2 = document.querySelector(".tela3");
+    let tela2 = document.querySelector(".tela2");
     
     tela1.classList.remove("active");
     tela2.classList.add("active");
@@ -9,10 +9,12 @@ document.querySelector('#startGame').addEventListener('pointerup', () => {
 
 function gameStart() {
 
-    document.querySelectorAll(".frasco").forEach(frasco => {
+    let segurando = [];
     
+    document.querySelectorAll(".frasco").forEach(frasco => {
+        
         frasco.addEventListener('pointerdown', (e) => {
-            let bolas = frasco.querySelectorAll(".ball");
+            let bolas = Array.from(frasco.querySelectorAll(".ball"));
             let bola = [];
             let corBola = [];
 
@@ -34,26 +36,37 @@ function gameStart() {
 
             });
 
-            let primeiraBola = bola[0];
-            let verificaCorBola = corBola[0];
+            if (segurando.length === 0) {
+                let primeiraBola = bola[0];
+                let verificaCorBola = corBola[0];
 
-            if (primeiraBola != undefined) {
-                /*
-                Talvez eu apague essa linha depois, mas por agora ela serve de lembrança para o que eu fiz antes para que a primeira bola levantasse, se caso não precisar, apague este comentário 
-                primeiraBola.style.marginBottom = '15px';
-                */
-                for (let i = 0; i < corBola.length; i++){
+                if (primeiraBola != undefined) {
 
-                    if (verificaCorBola === corBola[i]) {
-                        bola[i].style.marginBottom = '15px';
-                    } else {
-                        break;
-                    }
-                }
+                    for (let i = 0; i < corBola.length; i++){
 
-            };
+                        if (verificaCorBola === corBola[i]) {
+                            segurando.push(bola[i]);
+                            bola[i].style.transform = 'translate(0px, -4px)';
+                            bola[i].style.transition = '.2s';
+
+                            
+                            // bola[i].remove();
+                        } else {
+                            break;
+                        };
+                    };
+                    // var = "pos"+i (i = número total de bolas)
+                };
+            } else {
+                // segurando.remove();
+                segurando.forEach(bola => {
+                    frasco.appendChild(bola);
+                    segurando = []
+                    
+                });
+            }
         });
-    });
+    }); 
 
 }
 
