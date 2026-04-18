@@ -112,7 +112,8 @@ h1 {
     display: grid;
     margin: 80px auto 0 auto;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 53px);
+    grid-auto-rows: 53px;
+    align-content: end;
     place-items: center;
     
     width: 93px;
@@ -144,20 +145,4 @@ h1 {
 
 .ballR {
     background-color: var(--vermelha);
-}
-
-.pos1 {
-    grid-row: 1;
-}
-
-.pos2 {
-    grid-row: 2;
-}
-
-.pos3 {
-    grid-row: 3;
-}
-
-.pos4 {
-    grid-row: 4;
 }

@@ -47,26 +47,24 @@ function gameStart() {
                         if (verificaCorBola === corBola[i]) {
                             segurando.push(bola[i]);
                             bola[i].style.transform = 'translate(0px, -4px)';
-                            bola[i].style.transition = '.2s';
-
-                            
-                            // bola[i].remove();
+                            bola[i].style.transition = '.2s';                            
                         } else {
                             break;
                         };
                     };
-                    // var = "pos"+i (i = número total de bolas)
                 };
             } else {
-                // segurando.remove();
                 segurando.forEach(bola => {
-                    frasco.appendChild(bola);
-                    segurando = []
+
+                    frasco.prepend(bola);
                     
+                    bola.style.transform = 'translate(0px, 0px)';
+                    bola.style.transition = '.2s';
+                    segurando = []
                 });
             }
         });
-    }); 
+    });
 
 }
 
