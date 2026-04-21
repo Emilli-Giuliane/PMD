@@ -15,7 +15,7 @@ function gameStart() {
     
     document.querySelectorAll(".frasco").forEach(frasco => {
 
-        frasco.addEventListener('pointerdown', (e) => {
+        frasco.addEventListener('click', (e) => {
             let bolas = Array.from(frasco.querySelectorAll(".ball"));
             let bola = [];
             let corBola = [];
@@ -103,7 +103,7 @@ function gameStart() {
                             
                             if (todasCoresIguais && bolaAtualizada.length === 4){
                                 contadorDeFrascosTerminados++;
-                                alert(contadorDeFrascosTerminados)
+                                // alert(contadorDeFrascosTerminados)
                             }
                     
                         };
