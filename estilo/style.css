@@ -15,6 +15,7 @@
 }
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
     background-color: var(--fundo);
     color: var(--branco);
     width: 410px;
@@ -95,6 +96,15 @@ h1 {
 
 .telaVitoria.active {
     display: flex;
+}
+
+#proximaFase {
+    padding: 10px 100px;
+    margin: 15px;
+    background-color: var(--azul-claro);
+    color: var(--fundo);
+    font-size: large;
+    font-weight: bold;
 }
 
 .tela3 {
