@@ -5,17 +5,27 @@ document.querySelector('#startGame').addEventListener('pointerup', () => {
     
     tela1.classList.remove("active");
     tela2.classList.add("active");
-})
 
-function gameStart() {
-    
+    gameInitialize = false;
+    gameStart(3);
+});
+
+let gameInitialize = false;
+
+function gameStart(qntdParaVencer) {
+    if (gameInitialize) return;
+    gameInitialize = true;
+
     let segurando = [];
     let frascoOrigem = null;
     let contadorDeFrascosTerminados = 0;
     
-    document.querySelectorAll(".frasco").forEach(frasco => {
+    let telaAtiva = document.querySelector(".tela.active");
+    let frascos = telaAtiva.querySelectorAll(".frasco");
 
-        frasco.addEventListener('click', (e) => {
+    frascos.forEach(frasco => {
+
+        frasco.addEventListener('pointerdown', (e) => {
             let bolas = Array.from(frasco.querySelectorAll(".ball"));
             let bola = [];
             let corBola = [];
@@ -103,7 +113,32 @@ function gameStart() {
                             
                             if (todasCoresIguais && bolaAtualizada.length === 4){
                                 contadorDeFrascosTerminados++;
-                                // alert(contadorDeFrascosTerminados)
+                            }
+                            if (contadorDeFrascosTerminados === qntdParaVencer) {
+                                // colocar tela de vitória caso tela atual seja tela2
+                                    // document.querySelector(".telaVitoria").classList.add("active");
+
+                                
+                                if (document.querySelector(".tela2").classList.contains("active")){
+
+                                    document.querySelector(".telaVitoria").classList.add("active");
+                                    // let tela3 = document.querySelector(".tela3");
+                                    // let tela2 = document.querySelector(".tela2");
+                                    
+                                    
+                                    // document.querySelector("#proximaFase").addEventListener("pointerdown", () => {
+                                        //     telaVitoria.classList.remove("active")
+                                        //     tela2.classList.remove("active")
+                                        //     tela3.classList.add("active")
+                                    //     gameStart(4);
+                                    // }) 
+                                } else if (document.querySelector(".tela3").classList.contains("active")) {
+                                    window.location.href = "mensagem-vitoria.html";
+                                }
+                                // else if (document.querySelector(".tela3").classList.contains("active")) {
+                                //         alert("ola")
+                                // }
+                                
                             }
                     
                         };
@@ -115,10 +150,19 @@ function gameStart() {
             
         });
     });
-    
 }
 
-gameStart();
+let tela3 = document.querySelector(".tela3");
+let tela2 = document.querySelector(".tela2");
+document.querySelector("#proximaFase").addEventListener("pointerdown", () => {
+    document.querySelector(".telaVitoria").classList.remove("active")
+    tela2.classList.remove("active")
+    tela3.classList.add("active")
+
+    gameInitialize = false;
+    gameStart(4);
+});
+// gameStart(4);
 // TODO Amigo: Se caso no futuro ficar dificil de usar o gameStart() por causa da troca de telas, tente reiniciar o layout da tela2 antes de ir para a tela3. Validando a tela3 vá para a ultima tela de vitória.
 
 document.querySelectorAll(".tela").forEach(tela => {
@@ -134,7 +178,14 @@ document.querySelectorAll(".btnReset").forEach(btn => {
     const container = tela.querySelector(".container");
     
     container.innerHTML = tela.dataset.layout;
+    
+    gameInitialize = false;
     // fazer uma função com a lógica das bolinhas já aplicadas para que chamar novamente dentro do evento click do botão reset, se não o botão funcionará apenas uma vez e nunca mais funcionará. Por isso precisa se chamar a função
-    gameStart(); 
+    if ([...tela.classList].find(c => c !== "tela") === "tela2") {
+        gameStart(3); 
+    } else if ([...tela.classList].find(c => c !== "tela") === "tela3") {
+        gameStart(4);
+    }
+
     });
 });
