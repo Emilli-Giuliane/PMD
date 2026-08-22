@@ -7,3 +7,7 @@ Este é um jogo curto de 2 fases sobre combinar cores em um só frasco para venc
 Este jogo foi pensado para ser jogado apenas em celulares. Executar a página principal no computador não quebra o código mas a interface fica presa no canto esquerdo da tela. <br>
 A interatividade do site foi feito em JavaScript, a interface foi feita com HTML/CSS.
 </p>
+<p>
+<h2>Veja o projeto funcionando por este link:</h1>
+https://emilli-giuliane.github.io/PMD/
+</p>
