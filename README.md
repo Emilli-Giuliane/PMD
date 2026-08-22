@@ -68,27 +68,27 @@ O objetivo do jogo é combinar cores dentro das garrafas de vidro. O jogo termin
 
 <h2>Workflow (Kanban)</h2>
 <h3>Telas</h3>
-<label><input type="checkbox" disabled checked>Criar html primeira tela</label><br>
-<label><input type="checkbox" disabled checked>Criar css primeira tela</label><br>
-<label><input type="checkbox" disabled checked>Criar html segunda tela (fase 1 do jogo)</label><br>
-<label>&emsp;<input type="checkbox" disabled checked>criar um botão de reset para o jogador conseguir reverter todo o processo caso tenha cometido um erro.</label><br>
-<label>&emsp;<input type="checkbox" disabled checked>colocar as classes bola na mesma organização que está mostrando no protótipo presente neste documento.</label><br>
-<label><input type="checkbox" disabled checked>Criar css segunda tela (fase 1 do jogo)</label><br>
-<label><input type="checkbox" disabled checked>Criar html terceira tela (fase 2 do jogo)</label><br>
-<label>&emsp;<input type="checkbox" disabled checked>colocar as classes bola na mesma organização que está mostrando no protótipo presente neste documento.</label><br>
-<label>&emsp;<input type="checkbox" disabled checked>criar um botão de reset para o jogador conseguir reverter todo o processo caso tenha cometido um erro.</label><br>
-<label><input type="checkbox" disabled checked>Criar css segunda tela (fase 1 do jogo)</label><br>
-<label><input type="checkbox" disabled checked>Criar html terceira tela (fase 2 do jogo)</label><br>
-<label>&emsp;<input type="checkbox" disabled checked>colocar as classes bola na mesma organização que está mostrando no protótipo presente neste documento.</label><br>
-<label>&emsp;<input type="checkbox" disabled checked>criar um botão de reset para o jogador conseguir reverter todo o processo caso tenha cometido um erro.</label><br>
-<label><input type="checkbox" disabled checked>Criar css terceira tela (fase 2 do jogo)</label><br>
-<label><input type="checkbox" disabled checked>Criar html quarta tela (tela de vitória)</label><br>
-<label>&emsp;<input type="checkbox" disabled checked>Um h1 chamando a atenção no início da página, uma foto mostrando para quem é voltado o projeto e uma mensagem de feliz dia das mães logo abaixo da imagem.</label><br>
-<label><input type="checkbox" disabled checked>Criar css quarta tela (tela de vitória)</label><br>
+<label><input type="checkbox" disabled checked>✅Criar html primeira tela</label><br>
+<label><input type="checkbox" disabled checked>✅ Criar css primeira tela</label><br>
+<label><input type="checkbox" disabled checked>✅ Criar html segunda tela (fase 1 do jogo)</label><br>
+<label>&emsp;<input type="checkbox" disabled checked>✅ criar um botão de reset para o jogador conseguir reverter todo o processo caso tenha cometido um erro.</label><br>
+<label>&emsp;<input type="checkbox" disabled checked>✅ colocar as classes bola na mesma organização que está mostrando no protótipo presente neste documento.</label><br>
+<label><input type="checkbox" disabled checked>✅ Criar css segunda tela (fase 1 do jogo)</label><br>
+<label><input type="checkbox" disabled checked>✅ Criar html terceira tela (fase 2 do jogo)</label><br>
+<label>&emsp;<input type="checkbox" disabled checked>✅ colocar as classes bola na mesma organização que está mostrando no protótipo presente neste documento.</label><br>
+<label>&emsp;<input type="checkbox" disabled checked>✅ criar um botão de reset para o jogador conseguir reverter todo o processo caso tenha cometido um erro.</label><br>
+<label><input type="checkbox" disabled checked>✅ Criar css segunda tela (fase 1 do jogo)</label><br>
+<label><input type="checkbox" disabled checked>✅ Criar html terceira tela (fase 2 do jogo)</label><br>
+<label>&emsp;<input type="checkbox" disabled checked>✅ colocar as classes bola na mesma organização que está mostrando no protótipo presente neste documento.</label><br>
+<label>&emsp;<input type="checkbox" disabled checked>✅ criar um botão de reset para o jogador conseguir reverter todo o processo caso tenha cometido um erro.</label><br>
+<label><input type="checkbox" disabled checked>✅ Criar css terceira tela (fase 2 do jogo)</label><br>
+<label><input type="checkbox" disabled checked>✅ Criar html quarta tela (tela de vitória)</label><br>
+<label>&emsp;<input type="checkbox" disabled checked>✅ Um h1 chamando a atenção no início da página, uma foto mostrando para quem é voltado o projeto e uma mensagem de feliz dia das mães logo abaixo da imagem.</label><br>
+<label><input type="checkbox" disabled checked>✅ Criar css quarta tela (tela de vitória)</label><br>
 
 <h3>Funções e códigos</h3>
-<label><input type="checkbox" disabled checked>Criar uma função que armazena em uma constante (array) a posição e nome de cada elemento dentro das classes “box”.</label><br>
-<label><input type="checkbox" disabled checked>Quando clicado na div pai (.box), visualmente fazer a primeira bolinha do topo junto com as outras que estiverem combinadas de cor com essa (se houver) “saltar/saltarem”, mostrando o feedback que ela será movida sozinha ou em bando da próxima vez que alguma div for clicada.</label><br>
+<label><input type="checkbox" disabled checked>✅ Criar uma função que armazena em uma constante (array) a posição e nome de cada elemento dentro das classes “box”.</label><br>
+<label><input type="checkbox" disabled checked>✅ Quando clicado na div pai (.box), visualmente fazer a primeira bolinha do topo junto com as outras que estiverem combinadas de cor com essa (se houver) “saltar/saltarem”, mostrando o feedback que ela será movida sozinha ou em bando da próxima vez que alguma div for clicada.</label><br>
 
 <h2>Possíveis implementações futuras</h2>
 <table>
